@@ -1,0 +1,20 @@
+<!--form agrupa os inputs
+o atributo action diz para onde na internet este formulario (conjunto de inputs) será enviado - caso ele fique sem action o dados seram enviados para a mesma página
+method = métodos - eles são um conjuto de regras de transferencias de dados no protocolo http que define alguns verbos para nos comunicar - são eles
+GET - RECEBER e enviar recursos pela URL (neste caso deste projeto são os dados do evento - no caso do google.com é a pesquisa)
+POST - ENVIAR recursos pelo corpo da requisição -->
+<!--Query string parameters = Parametros da URL que pode ser visto no payload dentro da rede dentro o devtools-->
+<form>
+  <!--action="/search" method="get"-->
+  <input type="text" name="q" />
+  <!--Atribui o name = nome q ao introduzir dados nos campos dentro do formulario-->
+  <input
+    type="hidden"
+    name="sxsrf"
+    value="ALiCzsatLvkGy78TsQMTRkIXD01rKSVzlA"
+  /><!--hidden = escondido é uma tag que fica escondida-->
+  <input type="submit" value="Pesquisar" />
+  <!--Tag que atribuindo o submit = enviar - você consegue envir e receber informação de acordo com o metodo = method, gera um botão que ao clicar redireciona a página -->
+</form>
+
+<!--Estas informações de troca de dados via http - via formulario HTML, serve como base para guardar/apresentar dados no back-end-->
